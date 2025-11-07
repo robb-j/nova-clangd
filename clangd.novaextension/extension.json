@@ -1,0 +1,35 @@
+{
+  "identifier": "robb-j.clangd",
+  "name": "Clangd",
+  "organization": "robb-j",
+  "description": "…",
+  "version": "0.0.0",
+  "main": "main.js",
+
+  "entitlements": {
+    "process": true,
+    "requests": true,
+    "filesystem": "readwrite"
+  },
+
+  "activationEvents": ["onLanguage:c", "onLanguage:cpp"],
+
+  "config": [
+    {
+      "key": "robb-j.clangd.path",
+      "title": "Language Server Path",
+      "type": "path",
+      "placeholder": "/usr/bin/clangd",
+      "default": "/usr/bin/clangd"
+    }
+  ],
+
+  "commands": {
+    "extensions": [
+      {
+        "title": "Restart Server",
+        "command": "robb-j.clangd.restart"
+      }
+    ]
+  }
+}
