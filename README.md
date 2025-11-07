@@ -13,3 +13,5 @@ and disabled Icarus which got this working and linting cpp files better.
 
 I also discovered a hack where you can trick Icarus into running clangd anyway
 by setting `/usr/bin/clangd` as the language server path in settings.
+
+> [icarus issue](https://github.com/panicinc/icarus/issues/25)
