@@ -2,17 +2,16 @@
   "identifier": "robb-j.clangd",
   "name": "Clangd",
   "organization": "robb-j",
-  "description": "…",
+  "description": "A proof-of-concept clangd LanguageClient for Nova",
   "version": "0.0.0",
   "main": "main.js",
 
   "entitlements": {
     "process": true,
-    "requests": true,
     "filesystem": "readwrite"
   },
 
-  "activationEvents": ["onLanguage:c", "onLanguage:cpp"],
+  "activationEvents": ["onLanguage:c", "onLanguage:cpp", "onWorkspaceContains:compile_commands.json"],
 
   "config": [
     {
